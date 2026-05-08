@@ -38,6 +38,7 @@ onMounted(() => {
         <span class="tag yellow">deploy-service</span>
       </div>
 
+      <div class="fw-label">VUE</div>
       <h1>Тестовый<br /><em>деплой</em></h1>
       <p>
         Тестовая страница для проверки работы deploy-service.<br />
@@ -92,6 +93,17 @@ onMounted(() => {
 }
 .b1 { width: 450px; height: 450px; background: #41b883; top: -120px; left: -120px; }
 .b2 { width: 300px; height: 300px; background: #34d399; bottom: -80px; right: -80px; }
+
+.fw-label {
+  font-size: 6rem;
+  font-weight: 900;
+  color: #41b883;
+  text-shadow: 0 0 60px rgba(65,184,131,.45);
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-bottom: .5rem;
+  font-family: monospace;
+}
 
 .card {
   max-width: 540px;
