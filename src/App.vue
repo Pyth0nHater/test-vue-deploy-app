@@ -7,6 +7,7 @@ const steps = [
   { icon: '🔨', label: 'Docker-образ собран' },
   { icon: '🚀', label: 'Контейнер запущен' },
   { icon: '🌐', label: 'Traefik маршрут активен' },
+  { icon: '🔄', label: 'Авто-редеплой по git push ✓' },
 ]
 
 const info = [
@@ -39,10 +40,10 @@ onMounted(() => {
       </div>
 
       <div class="fw-label">VUE</div>
-      <h1>Тестовый<br /><em>деплой</em></h1>
+      <h1>v2 — Авто<br /><em>редеплой</em></h1>
       <p>
-        Тестовая страница для проверки работы deploy-service.<br />
-        Приложение собрано в Docker-образ и доступно через Traefik.
+        Обновление применено автоматически после git push в main.<br />
+        Webhook → deploy-service → Docker rebuild → Traefik.
       </p>
 
       <div class="steps">
